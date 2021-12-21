@@ -31,13 +31,5 @@ def _get_position(uses_aim):
     return horizontal * depth
 
 
-def part_1():
-    print_output(day=2, part=1, output=_get_position(uses_aim=False))
-
-
-def part_2():
-    print_output(day=2, part=2, output=_get_position(uses_aim=True))
-
-
-part_1()
-part_2()
+print_output(day=2, part=1, output=_get_position(uses_aim=False))
+print_output(day=2, part=2, output=_get_position(uses_aim=True))

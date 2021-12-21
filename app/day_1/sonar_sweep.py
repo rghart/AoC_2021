@@ -24,13 +24,5 @@ def _get_depth_increases(measurement_window):
     return depth_increases
 
 
-def part_1():
-    print_output(day=1, part=1, output=_get_depth_increases(measurement_window=1))
-
-
-def part_2():
-    print_output(day=1, part=2, output=_get_depth_increases(measurement_window=3))
-
-
-part_1()
-part_2()
+print_output(day=1, part=1, output=_get_depth_increases(measurement_window=1))
+print_output(day=1, part=2, output=_get_depth_increases(measurement_window=3))
