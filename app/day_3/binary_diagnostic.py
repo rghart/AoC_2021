@@ -5,21 +5,21 @@ my_input = read_input(day_num=3)
 
 
 def _get_power_consumption():
-    old_array = []
+    new_input_array = []
     for i in range(len(my_input)):
         for ix in range(len(my_input[i])):
-            if len(old_array) <= ix:
-                old_array.append(my_input[i][ix])
+            if len(new_input_array) <= ix:
+                new_input_array.append(my_input[i][ix])
             else:
-                old_array[ix] += my_input[i][ix]
+                new_input_array[ix] += my_input[i][ix]
 
     gamma_rate = ''
     epsilon_rate = ''
-    for i in range(len(old_array)):
+    for i in range(len(new_input_array)):
         zeroes = 0
         ones = 0
-        for x in range(len(old_array[i])):
-            if old_array[i][x] == '0':
+        for x in range(len(new_input_array[i])):
+            if new_input_array[i][x] == '0':
                 zeroes += 1
             else:
                 ones += 1
